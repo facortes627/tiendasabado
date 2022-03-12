@@ -1,3 +1,5 @@
+
+export function pintarTienda(){
 //Arreglo de objetos
 let productos=[
     {foto:'img/img1.jpg',nombre:"Buso", precio:70000, descripcion:"YEOU Sudadera con capucha de anime japonés"},
@@ -9,7 +11,13 @@ let productos=[
     {foto:'img/img1.jpg',nombre:"cosa", precio:60000, descripcion:""},
     {foto:'img/img1.jpg',nombre:"Buso", precio:60000, descripcion:""},
     {foto:'img/img1.jpg',nombre:"Buso", precio:60000, descripcion:""},
+    {foto:'img/img1.jpg',nombre:"Buso", precio:60000, descripcion:""},
+    {foto:'img/img1.jpg',nombre:"Buso", precio:60000, descripcion:""},
+    {foto:'img/img1.jpg',nombre:"Buso", precio:60000, descripcion:""},
+    {foto:'img/img1.jpg',nombre:"Buso", precio:60000, descripcion:""},
+    {foto:'img/img1.jpg',nombre:"Buso", precio:60000, descripcion:""},
     {foto:'img/img1.jpg',nombre:"Buso", precio:60000, descripcion:""} 
+
 ]
 
 //Creo la referencia al componente padre
@@ -19,9 +27,9 @@ let fila=document.getElementById("fila")
 //Recorrer array
 //forEach
 productos.forEach(function(producto){
-console.log(producto.nombre)
+/*console.log(producto.nombre)
 console.log(producto.precio)
-console.log(producto.foto)
+console.log(producto.foto)*/
 
 //Receta para pintar con js 
 
@@ -30,21 +38,50 @@ console.log(producto.foto)
 //creo la columna
 let columna=document.createElement("div")
 columna.classList.add("col")
+columna.classList.add("mb-5")
+columna.classList.add("mt-5")
 
 //creo la tarjeta
 let tarjeta=document.createElement("div")
 tarjeta.classList.add("card")
 tarjeta.classList.add("h-100")
+tarjeta.l
 
 //creo la imagen
 let foto=document.createElement("img")
 foto.classList.add("card-img-top")
 foto.src=producto.foto
 
+//creo el nombre
+let nombre=document.createElement("label")
+nombre.innerHTML= producto.nombre
+nombre.classList.add("align-self-center")
+
+//creo precio
+let precio=document.createElement("label")
+precio.innerHTML="$ "+ producto.precio
+precio.classList.add("titulo")
+
+//hadicionar popap cuando de clic en un boton con js
+ //crear boton
+let boton=document.createElement("button")
+boton.setAttribute("type","button")
+boton.classList.add("btn","btn-warning","mx-4")
+boton.textContent="ver producto"
 //2. Ordenar la estructura
 //Padres e hijos
 
-tarjeta.appendChild (foto)
+tarjeta.appendChild(foto)
+tarjeta.appendChild(nombre)
+tarjeta.appendChild(precio)
+tarjeta.appendChild(boton)
 columna.appendChild (tarjeta)
 fila.appendChild(columna)
+
+
 })
+
+//footer
+/*let footer=document.getElementById("footer")
+footer.style.backgroundColor= 'black';*/
+}
