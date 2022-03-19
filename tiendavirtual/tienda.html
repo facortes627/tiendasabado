@@ -1,41 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <header class="mb-5" >
-        <nav class="navbar navbar-expand-lg navbar-dark bg-info animate__animated animate__backInLeft" >
-   <div class="container-fluid">
-     <a class="navbar-brand"  id="medipiel"><img src="img/logo-medipiel.png" height="55" width="120" alt=""></a>   
-     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-         <li class="nav-item">
-           <a class="nav-link active" aria-current="page" href="http://localhost/tiendasabado/tiendavirtual/?#">Home</a>
-         </li>
-         <li class="nav-item">
-           <a class="nav-link" href="http://localhost/tiendasabado/tiendavirtual/tienda.html" target="_blank">Catalogo</a>
-         </li>
-         <li class="nav-item dropdown">
-           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-             Marcass
-           </a>
-           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-             <li><a class="dropdown-item" href="#">Action</a></li>
-             <li><a class="dropdown-item" href="#">Another action</a></li>
-             <li><hr class="dropdown-divider"></li>
-             <li><a class="dropdown-item" href="#">Something else here</a></li>
-           </ul>
-         </li>
-         <li class="nav-item">
-           <a class="nav-link ">Ofertas</a>
-         </li>
-       </ul>
-       <form class="d-flex">
-         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-         <button class="btn btn-outline-success" type="submit">Search</button>
-       </form>
-     </div>
-   </div>
- </nav>
-     </header>
+  
+  <header>
+      
+    <div class="row bg-primary pt-2  pb">
+      <div class="col-4"></div>
+      <div class="col-4 text-center ">
+        <h5 style="color: white; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;"> <i> ENVIOS GRATIS DESDE 150.000 </i> &nbsp; <a href="http://localhost/tiendasabado/tiendavirtual/tienda.html" style="color: white; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;"><i> COMPRAR </i> </h5> 
+      </div>
+      <div class="col-4">
+        <h5></h5>
+      </div>
+    </div>
+  
+      </header>
+  
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-dark " >
+        <div class="container-fluid">
+          <a class="navbar-brand col-2"  id="medipiel"><img src="img/logo-medipiel.png" height="55" width="120" alt=""></a>   
+          <div class="collapse navbar-collapse col-" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item col-4 ">
+                <a class="link-secondary active flex fs-5 " aria-current="page" href="http://localhost/tiendasabado/tiendavirtual/?#">Home</a>
+              </li>
+              <li class="nav-item flex col-5">
+                <a class="link-secondary fs-5" href="tienda.html" >Catalogo</a>
+              </li>
+              <li class="nav-item dropdown col-5">
+                <a class="link-secondary dropdown-toggle fs-5" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Marcass
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item ">
+                <a class="link-secondary fs-5 ">Ofertas</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Buscar</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      </div>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -67,19 +83,24 @@
 
           <div class="container">
             <div class="row">
-           <div class="col-4">
-             <img src="" alt="" class="img-fluid w-100" id="fotoinfo">
-           </div>
-           <div class="col-8"></div>
-          <h3 class="text-center" id="nombreinfo"></h3>  
-          </div>
+           <div class="col-8">
+             <img src="" alt="" class="img-fluid w-100 " id="fotoinfo">                  
           
+          <h6 class="text-center" id="marcainfo"></h6>
+             <h3 class="text-center" id="nombreinfo"></h3>               
+          
+           <h4 class="text-center" id="precioinfo" >  </h4>
+           </div>
+         
+            <h4 class="text-center" id="descripinfo" >  </h4>
+           
+          </div>
           </div>
           </div>
 
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-            <button type="button" class="btn btn-primary">Añadir al carrito</button>
+            <button type="button" class="btn btn-primary">Agragar al carrito</button>
           </div>
         </div>
       </div>
